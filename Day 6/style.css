@@ -1,0 +1,47 @@
+body {
+    background-color: black;
+    font-family: system-ui, -apple-system, sans-serif;
+    
+    /* INI MANTRA AJAIBNYA */
+    display: flex;             
+    justify-content: center;   
+    align-items: center;       
+    
+  
+    min-height: 100vh;         
+    margin: 0;                 
+}
+
+
+.card {
+    width: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#title h1, #title h3 {
+    margin: 0;
+}
+
+#title {
+    text-align: center;
+    color: aliceblue;
+    background-color: red;
+    padding-bottom: 12px;
+    padding-top: 10px;
+}
+
+.isi {
+    background-color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: red;
+    color: white;
+}
