@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans flex justify-center items-center p-5 min-h-screen m-0 text-white bg-gray-800">
+    
+    <div class="grid grid-cols-1 gap-10 w-full max-w-2xl text-center">
+        
+        <h1 class="text-3xl font-bold">Random Quote Generator</h1>
+        
+        <div class="bg-white text-black rounded-lg p-10 shadow-lg min-h-[200px] flex flex-col justify-center items-center transition-all duration-300">
+            
+            <p id="quote-text" class="text-2xl font-semibold mb-4">
+                "Klik tombol di bawah..."
+            </p>
+            
+            <p id="quote-author" class="text-gray-500 font-bold uppercase tracking-wider text-sm">
+                - Ready?
+            </p>
+
+        </div>
+
+        <button class="active:scale-95 transition bg-white text-black font-bold py-4 rounded-lg hover:bg-gray-200" onclick="createQuote()">
+            Generate Quote
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
