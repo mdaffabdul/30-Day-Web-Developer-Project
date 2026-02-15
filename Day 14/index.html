@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Mahasiswa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans flex justify-center items-center p-[25px] min-h-[100vh] m-0 text-2xl bg-grey-200">
+    <div class="rounded-xl bg-gray-100 w-full h-full">
+        <h1 class="text-4xl font-bold text-center pt-[40px]">Data Mahasiswa TI-24-PA</h1>
+        <div class="grid grid-cols-4 text-xl gap-6 pt-[40px] pb-[20px] px-6">
+            <button class="px-1 py-1 border-2 focus:bg-red-600 focus:text-white rounded-lg font-bold" onclick="filterMahasiswa('semua')">Semua</button>
+            <button class="px-1 py-1 border-2 focus:bg-red-600 focus:text-white rounded-lg font-bold" onclick="filterMahasiswa('ipk')">IPK > 3.5</button>
+            <button class="px-1 py-1 border-2 focus:bg-red-600 focus:text-white rounded-lg font-bold" onclick="filterMahasiswa('aktif')">Aktif</button>    
+            <button class="px-1 py-1 border-2 focus:bg-red-600 focus:text-white rounded-lg font-bold" onclick="filterMahasiswa('cuti')">Cuti</button>
+        </div>
+        <div class="text-lg rounded-lg border border-gray-200">
+            <table class="w-full text-left border-collapse pb-[40px]">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th class="p-4 border-b font-semibold text-gray-600">Nama</th>
+                        <th class="p-4 border-b font-semibold text-gray-600">Jurusan</th>
+                        <th class="p-4 border-b font-semibold text-gray-600">IPK</th>
+                        <th class="p-4 border-b font-semibold text-gray-600">Status</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body" class="bg-white">
+                    </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
