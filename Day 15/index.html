@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simpledex</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="flex flex-row items-center justify-between p-6 border-b-2">
+        <h1 class="text-3xl font-bold text-red-600"><span class="text-white [-webkit-text-stroke:1px_#000000]">Simple</span>Dex</h1>
+        
+        <input type="text" placeholder="Search Pokemon..." class="border-2 border-gray-300 rounded-lg px-4 py-2 w-1/3" oninput="searchPokemon(this.value)">
+        
+        <div class="w-[150px]"></div>
+    </div>
+
+    <div class="grid grid-cols-4 md:grid-cols-10 text-xl gap-6 pt-[40px] pb-[20px] px-6">
+            <button class="px-1 py-1 border-2 focus:bg-red-600 focus:text-white rounded-lg font-bold" onclick="filterPokemon('all')">All</button>
+            <button class="px-1 py-1 border-2 focus:bg-red-600 focus:text-white rounded-lg font-bold" onclick="filterPokemon('grass')">Grass</button>
+            <button class="px-1 py-1 border-2 focus:bg-red-600 focus:text-white rounded-lg font-bold" onclick="filterPokemon('fire')">Fire</button>    
+            <button class="px-1 py-1 border-2 focus:bg-red-600 focus:text-white rounded-lg font-bold" onclick="filterPokemon('water')">Water</button>
+            <button class="px-1 py-1 border-2 focus:bg-red-600 focus:text-white rounded-lg font-bold" onclick="filterPokemon('bug')">Bug</button>
+            <button class="px-1 py-1 border-2 focus:bg-red-600 focus:text-white rounded-lg font-bold" onclick="filterPokemon('normal')">Normal</button>
+            <button class="px-1 py-1 border-2 focus:bg-red-600 focus:text-white rounded-lg font-bold" onclick="filterPokemon('electric')">Electric</button>
+            <button class="px-1 py-1 border-2 focus:bg-red-600 focus:text-white rounded-lg font-bold" onclick="filterPokemon('poison')">Poison</button>
+            <button class="px-1 py-1 border-2 focus:bg-red-600 focus:text-white rounded-lg font-bold" onclick="filterPokemon('fairy')">Fairy</button>
+            <button class="px-1 py-1 border-2 focus:bg-red-600 focus:text-white rounded-lg font-bold" onclick="filterPokemon('ground')">Ground</button>          
+    </div>
+
+    <div id="pokemon-container" class="grid grid-cols-2 md:grid-cols-4 gap-6 p-6">
+    
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
