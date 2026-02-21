@@ -14,7 +14,7 @@ export default function CardPengeluaran(props: PropsPengeluaran) {
           <span className="text-[10px] text-slate-400">Baru saja</span>
         </div>
         <p className="text-slate-600 text-sm mt-1 leading-relaxed">
-          Rp.{props.JumlahPengeluaran}
+          Rp.{props.JumlahPengeluaran.toLocaleString('id-ID')}
         </p>
       </div>
     </div>
